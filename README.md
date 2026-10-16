@@ -25,8 +25,7 @@ No Check-Point 02 adicionamos efeitos simples usando CSS:
 O arquivo `efeitos.css` é importado no final de `style.css`.
 
 ## Integrantes
-- [Preencher nome do integrante 1]
-- [Preencher nome do integrante 2]
+- Gabriel Morone
 
 ## Links
 - Repositório: [colocar link do GitHub]
