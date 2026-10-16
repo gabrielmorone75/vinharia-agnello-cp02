@@ -26,10 +26,3 @@ O arquivo `efeitos.css` é importado no final de `style.css`.
 
 ## Integrantes
 - Gabriel Morone
-
-## Links
-- Repositório: [colocar link do GitHub]
-- GitHub Pages: [colocar link do site publicado]
-
-## Entrega
-Cada integrante deve realizar pelo menos 2 commits no repositório. Enviar os dois links pelo Teams.
