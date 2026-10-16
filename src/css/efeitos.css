@@ -87,3 +87,21 @@ main {
         transition: none !important;
     }
 }
+
+/* Destaca a página atual no menu */
+nav a.ativo {
+    color: #e8c98f;
+    font-weight: bold;
+}
+
+/* Efeito ao selecionar um texto */
+::selection {
+    background: #5b1825;
+    color: white;
+}
+
+/* Melhora o efeito ao passar o mouse nos links */
+nav a:hover {
+    color: #f5d7a1;
+    transform: translateY(-2px);
+}
