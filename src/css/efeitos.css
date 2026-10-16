@@ -1,15 +1,89 @@
 /* Efeitos visuais do Check-Point 02 */
-nav a { transition: color 0.3s; }
-nav a:hover { color: #e8c98f; } /* pseudo-classe 1 */
-nav a::after { content: ""; display: block; height: 2px; background: #e8c98f; width: 0; transition: width 0.3s; }
-nav a:hover::after { width: 100%; } /* pseudo-elemento 1 */
-h2::before { content: "• "; color: #aa7c4e; } /* pseudo-elemento 2 */
-input:focus, textarea:focus { outline: 2px solid #aa7c4e; } /* pseudo-classe 2 */
-.card:nth-child(even) { background: #f4eae4; } /* pseudo-classe 3 */
-.card { transition: transform 0.3s, box-shadow 0.3s; }
-.card:hover { transform: translateY(-5px); box-shadow: 0 5px 12px #0002; } /* transformação 1 */
-.botao { transition: background 0.3s, transform 0.3s; }
-.botao:hover { background: #7d2939; transform: scale(1.05); } /* transformação 2 */
-main { animation: aparecer 0.7s ease-out; }
-@keyframes aparecer { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* Efeitos nos links do menu */
+nav a {
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e8c98f;
+}
+
+/* Linha que aparece embaixo dos links */
+nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #e8c98f;
+    width: 0;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Detalhe antes dos títulos */
+h2::before {
+    content: "• ";
+    color: #aa7c4e;
+}
+
+/* Destaque nos campos do formulário */
+input:focus,
+textarea:focus {
+    outline: 2px solid #aa7c4e;
+}
+
+/* Cor diferente nos cartões pares */
+.card:nth-child(even) {
+    background: #f4eae4;
+}
+
+/* Movimento dos cartões */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px #0002;
+}
+
+/* Efeito dos botões */
+.botao {
+    transition: background 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+    background: #7d2939;
+    transform: scale(1.05);
+}
+
+/* Animação de entrada da página */
+main {
+    animation: aparecer 0.7s ease-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reduz animações conforme preferência do usuário */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
